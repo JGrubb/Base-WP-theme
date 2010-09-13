@@ -3,12 +3,16 @@
 
 	- - - - - - - - - - - - - - - - - - - - - - -
 
-	Starkers is a bare-bones WordPress theme created 
-	to act as a starting point for the theme designer.	Free of all presentational elements and non-semantic 
-	markup, Starkers is the perfect 'blank slate' for 
+	ibd is a bare-bones WordPress theme created 
+	to act as a starting point for the theme designer.
+
+	Free of all presentational elements and non-semantic 
+	markup, ibd is the perfect 'blank slate' for 
 	your WordPress projects, as it's a stripped-back 
 	version of the 'Twenty Ten' theme (versions prior to 
-	3.0 were based on the now-retired 'Default' theme).	Best of all: it's free and fully GPL-licensed, 
+	3.0 were based on the now-retired 'Default' theme).
+
+	Best of all: it's free and fully GPL-licensed, 
 	so you can use it for whatever you like — even 
 	your commercial projects.
 
@@ -54,7 +58,7 @@
 	
 	Versions 2.3 - 2.7
 
-	Non-existent. Starkers is now named according to 
+	Non-existent. ibd is now named according to 
 	the version of WordPress with which it is compatible.
 
 	- - - - - - - - - - - - - - - - - - - - - - -

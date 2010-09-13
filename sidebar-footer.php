@@ -3,8 +3,8 @@
  * The Footer widget areas.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers 3.0
+ * @subpackage ibd
+ * @since ibd 1.0
  */
 ?>
 

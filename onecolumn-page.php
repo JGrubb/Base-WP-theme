@@ -8,8 +8,8 @@
  * from a dropdown menu on the edit page screen.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers 3.0
+ * @subpackage ibd
+ * @since ibd 1.0
  */
 
 get_header(); ?>

@@ -6,8 +6,8 @@
  * after.  Calls sidebar-footer.php for bottom widgets.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers 3.0
+ * @subpackage ibd
+ * @since ibd 1.0
  */
 ?>
 

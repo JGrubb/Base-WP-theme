@@ -34,8 +34,8 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers 3.0
+ * @subpackage ibd
+ * @since ibd 1.0
  */
 
 /**
@@ -130,7 +130,7 @@ function twentyten_setup() {
 			'url' => '%s/images/headers/starkers.png',
 			'thumbnail_url' => '%s/images/headers/starkers-thumbnail.png',
 			/* translators: header image description */
-			'description' => __( 'Starkers', 'twentyten' )
+			'description' => __( 'ibd', 'twentyten' )
 		)
 	) );
 }
