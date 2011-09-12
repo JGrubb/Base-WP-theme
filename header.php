@@ -40,7 +40,15 @@
 ?>
 </head>
 <body <?php body_class(); ?>>
-	<h1>
-		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-	</h1>
-	<p><?php bloginfo( 'description' ); ?></p>
+  <div id="header">
+    <div id="header-wrap">
+      <h1 id="logo">
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+      </h1>
+    </div>
+  </div>
+  <div id="nav">
+    <?php wp_nav_menu() ?>
+    <div class="clear"></div>
+  </div>
+	

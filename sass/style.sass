@@ -1,5 +1,39 @@
-@import layout.sass
-@import reset.sass
-@import 960.sass
-@import print.sass
+@import lib
+@import reset
 
+body
+  font: 13px/1.5 arial
+
+#header
+  @include gradient(#0a506a, #397286)
+  height: 140px
+  #header-wrap
+    @include container
+    background: #fff url(images/header-bg.jpg) center bottom repeat-x
+    height: 140px
+    #logo
+      text-indent: -9999px
+      background: url(images/logo.png) center no-repeat
+      height: 94px
+      width: 361px
+      padding: 20px 35px
+#nav
+  $background: #5e88a2
+  background: $background
+  border-bottom: 1px solid #fff
+  .menu
+    @include container
+    ul
+      width: 500px
+      margin: 0 auto
+      li
+        display: block
+        float: left
+        padding: 7px 12px
+        &:hover
+          background: #004964
+        a
+          color: #fff
+          text-decoration: none
+          text-transform: uppercase
+          font-size: 15px
