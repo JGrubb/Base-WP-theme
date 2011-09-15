@@ -10,16 +10,18 @@
  * @since ibd 1.0
  */
 ?>
+<div class="clear"></div>
+</div><!-- end #content-->
+<div id="footer">
+  <div id="footer-wrap">
 
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
-
-			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress </a>
+    <?php get_search_form() ?>
+    <?php wp_nav_menu() ?>
+    <div id="copyright">
+      &copy; <?php print(date('Y')) ?> Environmental Window Solutions<br />
+      (704)200-2001<br />
+      <a href="mailto:matt@environmentalwindow.com">Email Us</a>
+    </div>
 
 <?php
 	/* Always have wp_footer() just before the closing </body>
@@ -29,5 +31,7 @@
 
 	wp_footer();
 ?>
+  </div>
+</div>
 </body>
 </html>

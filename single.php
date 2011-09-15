@@ -8,7 +8,8 @@
  */
 
 get_header(); ?>
-
+<div id="page-wrap">
+  <div id="page">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'twentyten' ) . ' %title' ); ?>
@@ -39,6 +40,9 @@ get_header(); ?>
 				<?php comments_template( '', true ); ?>
 
 <?php endwhile; // end of the loop. ?>
-
+  </div>
+  <div id="sidebar">
 <?php get_sidebar(); ?>
+  </div>
+</div>
 <?php get_footer(); ?>

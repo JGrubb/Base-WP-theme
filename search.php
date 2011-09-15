@@ -8,7 +8,8 @@
  */
 
 get_header(); ?>
-
+<div id="page-wrap">
+  <div id="page">
 <?php if ( have_posts() ) : ?>
 				<h1><?php printf( __( 'Search Results for: %s', 'twentyten' ), '' . get_search_query() . '' ); ?></h1>
 				<?php
@@ -23,6 +24,9 @@ get_header(); ?>
 					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentyten' ); ?></p>
 					<?php get_search_form(); ?>
 <?php endif; ?>
-
+</div>
+<div id="sidebar">
 <?php get_sidebar(); ?>
+</div>
+</div>
 <?php get_footer(); ?>

@@ -1,0 +1,256 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import compass/typography
+@import lib
+
+$base-font-size: 14px
+$base-line-height: 21px
+@include establish-baseline
+$grey-blue: #5e88a2
+
+@font-face
+  font-family: 'impact'
+  src: url('../fonts/impact-webfont.eot')
+  src: url('../fonts/impact-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/impact-webfont.woff') format('woff'), url('../fonts/impact-webfont.ttf') format('truetype'), url('../fonts/impact-webfont.svg#ImpactRegular') format('svg')
+  font-weight: normal
+  font-style: normal
+  
+@font-face 
+  font-family: 'uni'
+  src: url('../fonts/universltstd-cn-webfont.eot')
+  src: url('../fonts/universltstd-cn-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/universltstd-cn-webfont.woff') format('woff'), url('../fonts/universltstd-cn-webfont.ttf') format('truetype'), url('../fonts/universltstd-cn-webfont.svg#UniversLTStd57Condensed') format('svg')
+  font-weight: normal
+  font-style: normal
+
+h1
+  @include adjust-font-size-to($base-font-size * 2)
+  font-family: 'impact'
+  color: $grey-blue
+
+h2
+  @include adjust-font-size-to($base-font-size * 2)
+  font-family: 'impact'
+  color: $grey-blue
+  
+h3
+  @include adjust-font-size-to($base-font-size * 1.5)
+  
+h4
+  @include adjust-font-size-to($base-font-size)
+  
+h5
+  @include adjust-font-size-to($base-font-size)
+  
+p
+  margin: 1.5em 0
+  
+body
+  font-family: arial
+  color: #444
+  background: #004964
+
+#header
+  @include gradient(#0a506a, #397286)
+  height: 140px
+  #flaggy-thing
+    position: absolute
+    height: 150px
+    width: 90px
+    top: 0
+    left: -90px
+    background: url(../images/flag.png) center no-repeat
+  #header-wrap
+    @include container
+    @include gradient(#fff, #bdd0d7, $start: 75%)
+    height: 140px
+    position: relative
+    #logo
+      @include replace-text-with-dimensions("logo.png")
+      @include grid(8)
+      padding-top: 40px
+    #phone-badge
+      @include replace-text-with-dimensions("phone-badge.png")
+      position: relative
+      left: 280px
+      
+#nav
+  background: $grey-blue
+  border-bottom: 1px solid #fff
+  .menu-main-container
+    @include container
+    ul
+      width: 480px
+      margin: 0 auto
+      li
+        display: block
+        float: left
+        padding: 7px 12px
+        font-family: uni
+        &:hover, &.current_page_item
+          background: #004964
+        a
+          color: #fff
+          text-decoration: none
+          text-transform: uppercase
+          font-size: 15px
+          
+#content
+  background: #fff
+  padding-bottom: 100px
+          
+#page-wrap
+  @include container
+  padding-top: 40px
+  
+#page
+  @include grid(10)
+  
+#sidebar
+  @include grid(6)
+  .xoxo
+    padding-left: 20px
+    border-left: 1px solid #eee
+    
+#home-stage
+  background: #004964 url(../images/home-slice.png) center bottom repeat-x
+  margin-bottom: 30px
+.home-wrap
+  @include container
+  .ngg-slideshow
+    float: left
+    margin-right: 30px
+    @include drop-shadow
+    @include grid(8)
+  #copy
+    @include grid(8)
+    color: #fff
+    padding-top: 70px
+    h2
+      font-family: impact
+      color: #fff
+      text-shadow: -2px 2px 0 #000
+  .home-grid
+    @include tri_grid(4)
+    .yd_rp_widget
+      margin: 0 10px
+      background: url(../images/news.png) top left no-repeat
+      .yd_rp_excerpt a
+        color: lighten($grey-blue, 15%)
+        text-transform: uppercase
+      h4
+        font-weight: bold
+      a
+        color: $grey-blue
+        text-decoration: none
+        display: block
+      li
+        padding: 15px 0
+        margin: 0 40px
+        &:first-child
+          border-bottom: 1px solid #eee
+          padding-top: 0
+    .first-grid
+      padding: 30px 0
+      #site-links
+        padding: 0 40px
+    .middle
+      color: #444
+      padding-top: 30px
+      border-left: 1px solid #eee
+      border-right: 1px solid #eee
+    .last-grid
+      padding-top: 30px
+      margin-top: 0
+      p
+        margin: 0 auto
+
+.quote
+  font-style: italic
+  color: #a1a1a1
+  font-family: georgia
+  background: url(../images/quote.png) left top no-repeat
+  padding: 0 15px 0 50px
+  
+.attr
+  font-family: georgia
+  color: #a1a1a1
+  font-weight: bold
+  padding-left: 50px
+
+#site-links
+  padding: 0 50px
+  li
+    text-align: center
+    margin: 8px 0
+    font-size: 16px
+    font-family: uni
+    &#quote
+      background: #000 url(../images/links_03.png) center repeat-y
+    &#portfolio
+      background: #000 url(../images/links_06.jpg) center repeat-y
+    &#faq
+      background: #000 url(../images/links_08.png) center repeat-y
+    a
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+      display: block
+      padding: 8px 0
+
+#footer
+  background: #004964
+  overflow: auto
+  height: 75px
+  padding-top: 30px
+  #footer-wrap
+    @include container
+    a
+      color: #fff
+    .menu
+      @include horizontal-list(8px)
+      @include grid(7)
+      text-transform: uppercase
+      font-size: 12px
+      a
+        text-decoration: none
+    #copyright
+      @include grid(5)
+      color: #fff
+      text-align: right
+      font-size: 12px
+      line-height: 16px
+      a
+        color: lighten($grey_blue, 20%)
+        text-decoration: none
+        text-transform: uppercase
+        font-weight: bold
+      
+#searchform
+  background: #fff
+  margin-top: 5px
+  @include grid(4)
+  padding: 0
+  position: relative
+  @include gradient(#fff, #ccc)
+  input[type="text"]
+    font-size: 16px
+    margin: 0
+    padding: 5px
+    border: none
+    color: #888
+    font-family: georgia
+    font-style: italic
+    width: 179px
+  input[type="submit"]
+    border: none
+    width: 25px
+    height: 20px
+    position: relative
+    background: url(../images/search-button.png) center no-repeat
+    &:hover
+      cursor: pointer

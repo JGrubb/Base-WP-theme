@@ -1,0 +1,564 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 58, /Users/grubb/WORK/ew/wp-content/themes/ew/sass/_lib.sass */
+.clear {
+  clear: both;
+}
+
+/* line 51, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body {
+  font-size: 87.5%;
+  line-height: 1.5em;
+}
+
+/* line 55, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html > body {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "impact";
+  src: url("../fonts/impact-webfont.eot");
+  src: url("../fonts/impact-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/impact-webfont.woff") format("woff"), url("../fonts/impact-webfont.ttf") format("truetype"), url("../fonts/impact-webfont.svg#ImpactRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni";
+  src: url("../fonts/universltstd-cn-webfont.eot");
+  src: url("../fonts/universltstd-cn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/universltstd-cn-webfont.woff") format("woff"), url("../fonts/universltstd-cn-webfont.ttf") format("truetype"), url("../fonts/universltstd-cn-webfont.svg#UniversLTStd57Condensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 30, ../sass/screen.sass */
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-family: "impact";
+  color: #5e88a2;
+}
+
+/* line 35, ../sass/screen.sass */
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-family: "impact";
+  color: #5e88a2;
+}
+
+/* line 40, ../sass/screen.sass */
+h3 {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+/* line 43, ../sass/screen.sass */
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 46, ../sass/screen.sass */
+h5 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 49, ../sass/screen.sass */
+p {
+  margin: 1.5em 0;
+}
+
+/* line 52, ../sass/screen.sass */
+body {
+  font-family: arial;
+  color: #444444;
+  background: #004964;
+}
+
+/* line 57, ../sass/screen.sass */
+#header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a506a), to(#397286));
+  background: -webkit-linear-gradient(top 270deg, #0a506a, #397286);
+  background: -moz-linear-gradient(top 270deg, #0a506a, #397286);
+  background: -o-linear-gradient(top 270deg, #0a506a, #397286);
+  background: -ms-linear-gradient(top 270deg, #0a506a, #397286);
+  background: linear-gradient(top, #0a506a, #397286);
+  height: 140px;
+}
+/* line 60, ../sass/screen.sass */
+#header #flaggy-thing {
+  position: absolute;
+  height: 150px;
+  width: 90px;
+  top: 0;
+  left: -90px;
+  background: url(../images/flag.png) center no-repeat;
+}
+/* line 67, ../sass/screen.sass */
+#header #header-wrap {
+  width: 960px;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left 75%, left bottom, from(white), to(#bdd0d7));
+  background: -webkit-linear-gradient(75% 270deg, white, #bdd0d7);
+  background: -moz-linear-gradient(75% 270deg, white, #bdd0d7);
+  background: -o-linear-gradient(75% 270deg, white, #bdd0d7);
+  background: -ms-linear-gradient(75% 270deg, white, #bdd0d7);
+  background: linear-gradient(75%, #ffffff, #bdd0d7);
+  height: 140px;
+  position: relative;
+}
+/* line 72, ../sass/screen.sass */
+#header #header-wrap #logo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/logo.png?1315786599');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 361px;
+  height: 94px;
+  width: 460px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 40px;
+}
+/* line 76, ../sass/screen.sass */
+#header #header-wrap #phone-badge {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/phone-badge.png?1315928236');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 164px;
+  height: 97px;
+  position: relative;
+  left: 280px;
+}
+
+/* line 81, ../sass/screen.sass */
+#nav {
+  background: #5e88a2;
+  border-bottom: 1px solid white;
+}
+/* line 84, ../sass/screen.sass */
+#nav .menu-main-container {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 86, ../sass/screen.sass */
+#nav .menu-main-container ul {
+  width: 480px;
+  margin: 0 auto;
+}
+/* line 89, ../sass/screen.sass */
+#nav .menu-main-container ul li {
+  display: block;
+  float: left;
+  padding: 7px 12px;
+  font-family: uni;
+}
+/* line 94, ../sass/screen.sass */
+#nav .menu-main-container ul li:hover, #nav .menu-main-container ul li.current_page_item {
+  background: #004964;
+}
+/* line 96, ../sass/screen.sass */
+#nav .menu-main-container ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* line 102, ../sass/screen.sass */
+#content {
+  background: white;
+  padding-bottom: 100px;
+}
+
+/* line 106, ../sass/screen.sass */
+#page-wrap {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/* line 110, ../sass/screen.sass */
+#page {
+  width: 580px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 113, ../sass/screen.sass */
+#sidebar {
+  width: 340px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 115, ../sass/screen.sass */
+#sidebar .xoxo {
+  padding-left: 20px;
+  border-left: 1px solid #eeeeee;
+}
+
+/* line 119, ../sass/screen.sass */
+#home-stage {
+  background: #004964 url(../images/home-slice.png) center bottom repeat-x;
+  margin-bottom: 30px;
+}
+
+/* line 122, ../sass/screen.sass */
+.home-wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 124, ../sass/screen.sass */
+.home-wrap .ngg-slideshow {
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  float: left;
+  margin: 2em 40px 4em;
+  background: none;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  width: 460px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 72, /Users/grubb/WORK/ew/wp-content/themes/ew/sass/_lib.sass */
+.home-wrap .ngg-slideshow:before, .home-wrap .ngg-slideshow:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
+/* line 129, ../sass/screen.sass */
+.home-wrap #copy {
+  width: 460px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  padding-top: 70px;
+}
+/* line 133, ../sass/screen.sass */
+.home-wrap #copy h2 {
+  font-family: impact;
+  color: white;
+  text-shadow: -2px 2px 0 black;
+}
+/* line 137, ../sass/screen.sass */
+.home-wrap .home-grid {
+  width: 300px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 139, ../sass/screen.sass */
+.home-wrap .home-grid .yd_rp_widget {
+  margin: 0 10px;
+  background: url(../images/news.png) top left no-repeat;
+}
+/* line 142, ../sass/screen.sass */
+.home-wrap .home-grid .yd_rp_widget .yd_rp_excerpt a {
+  color: #8eacbe;
+  text-transform: uppercase;
+}
+/* line 145, ../sass/screen.sass */
+.home-wrap .home-grid .yd_rp_widget h4 {
+  font-weight: bold;
+}
+/* line 147, ../sass/screen.sass */
+.home-wrap .home-grid .yd_rp_widget a {
+  color: #5e88a2;
+  text-decoration: none;
+  display: block;
+}
+/* line 151, ../sass/screen.sass */
+.home-wrap .home-grid .yd_rp_widget li {
+  padding: 15px 0;
+  margin: 0 40px;
+}
+/* line 154, ../sass/screen.sass */
+.home-wrap .home-grid .yd_rp_widget li:first-child {
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 0;
+}
+/* line 157, ../sass/screen.sass */
+.home-wrap .home-grid .first-grid {
+  padding: 30px 0;
+}
+/* line 159, ../sass/screen.sass */
+.home-wrap .home-grid .first-grid #site-links {
+  padding: 0 40px;
+}
+/* line 161, ../sass/screen.sass */
+.home-wrap .home-grid .middle {
+  color: #444444;
+  padding-top: 30px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+/* line 166, ../sass/screen.sass */
+.home-wrap .home-grid .last-grid {
+  padding-top: 30px;
+  margin-top: 0;
+}
+/* line 169, ../sass/screen.sass */
+.home-wrap .home-grid .last-grid p {
+  margin: 0 auto;
+}
+
+/* line 172, ../sass/screen.sass */
+.quote {
+  font-style: italic;
+  color: #a1a1a1;
+  font-family: georgia;
+  background: url(../images/quote.png) left top no-repeat;
+  padding: 0 15px 0 50px;
+}
+
+/* line 179, ../sass/screen.sass */
+.attr {
+  font-family: georgia;
+  color: #a1a1a1;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+/* line 185, ../sass/screen.sass */
+#site-links {
+  padding: 0 50px;
+}
+/* line 187, ../sass/screen.sass */
+#site-links li {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 16px;
+  font-family: uni;
+}
+/* line 192, ../sass/screen.sass */
+#site-links li#quote {
+  background: black url(../images/links_03.png) center repeat-y;
+}
+/* line 194, ../sass/screen.sass */
+#site-links li#portfolio {
+  background: black url(../images/links_06.jpg) center repeat-y;
+}
+/* line 196, ../sass/screen.sass */
+#site-links li#faq {
+  background: black url(../images/links_08.png) center repeat-y;
+}
+/* line 198, ../sass/screen.sass */
+#site-links li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 8px 0;
+}
+
+/* line 205, ../sass/screen.sass */
+#footer {
+  background: #004964;
+  overflow: auto;
+  height: 75px;
+  padding-top: 30px;
+}
+/* line 210, ../sass/screen.sass */
+#footer #footer-wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 212, ../sass/screen.sass */
+#footer #footer-wrap a {
+  color: white;
+}
+/* line 214, ../sass/screen.sass */
+#footer #footer-wrap .menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  width: 400px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* line 60, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer #footer-wrap .menu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 48, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer #footer-wrap .menu li:first-child, #footer #footer-wrap .menu li.first {
+  padding-left: 0;
+}
+/* line 49, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer #footer-wrap .menu li:last-child {
+  padding-right: 0;
+}
+/* line 50, /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer #footer-wrap .menu li.last {
+  padding-right: 0;
+}
+/* line 219, ../sass/screen.sass */
+#footer #footer-wrap .menu a {
+  text-decoration: none;
+}
+/* line 221, ../sass/screen.sass */
+#footer #footer-wrap #copyright {
+  width: 280px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  text-align: right;
+  font-size: 12px;
+  line-height: 16px;
+}
+/* line 227, ../sass/screen.sass */
+#footer #footer-wrap #copyright a {
+  color: #9fb8c7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 233, ../sass/screen.sass */
+#searchform {
+  background: white;
+  margin-top: 5px;
+  width: 220px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cccccc));
+  background: -webkit-linear-gradient(top 270deg, white, #cccccc);
+  background: -moz-linear-gradient(top 270deg, white, #cccccc);
+  background: -o-linear-gradient(top 270deg, white, #cccccc);
+  background: -ms-linear-gradient(top 270deg, white, #cccccc);
+  background: linear-gradient(top, #ffffff, #cccccc);
+}
+/* line 240, ../sass/screen.sass */
+#searchform input[type="text"] {
+  font-size: 16px;
+  margin: 0;
+  padding: 5px;
+  border: none;
+  color: #888888;
+  font-family: georgia;
+  font-style: italic;
+  width: 179px;
+}
+/* line 249, ../sass/screen.sass */
+#searchform input[type="submit"] {
+  border: none;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  background: url(../images/search-button.png) center no-repeat;
+}
+/* line 255, ../sass/screen.sass */
+#searchform input[type="submit"]:hover {
+  cursor: pointer;
+}
