@@ -178,29 +178,32 @@ body
     @include tri_grid(4)
     .yd_rp_widget
       margin: 0 10px
-      background: url(../images/news.png) top left no-repeat
-      .yd_rp_excerpt a
-        color: lighten($grey-blue, 15%)
-        text-transform: uppercase
+      .yd_rp_excerpt
+        a
+          color: lighten($grey-blue, 15%)
+          text-transform: uppercase
       h4
         font-weight: bold
       a
         color: $grey-blue
         text-decoration: none
-        display: block
+        display: inline-block
       li
-        padding: 15px 0
-        margin: 0 40px
+        padding: 15px 20px
+        margin: 0 20px
+        @include radius(5px)
+        &:hover
+          background: rgba(0, 0, 0, 0.1)
         &:first-child
           border-bottom: 1px solid #eee
-          padding-top: 0
     .first-grid
       padding: 30px 0
       #site-links
         padding: 0 40px
     .middle
+      background: url(../images/news.png) 10px 30px no-repeat
       color: #444
-      padding-top: 30px
+      padding-top: 20px
       border-left: 1px solid #eee
       border-right: 1px solid #eee
     .last-grid
