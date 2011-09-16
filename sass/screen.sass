@@ -84,11 +84,27 @@ body
       margin: 0 auto
       li
         display: block
+        position: relative
         float: left
         padding: 7px 12px
         font-family: uni
+        ul
+          position: absolute
+          display: none
+          width: 15em
+          top: 2.5em
+          left: 0px
+          background: $grey-blue
+          li
+            margin-left: 0
+            float: none
+            padding: 8px 5px
         &:hover, &.current_page_item
           background: #004964
+        &:hover
+          ul
+            display: block
+            z-index: 1000
         a
           color: #fff
           text-decoration: none
