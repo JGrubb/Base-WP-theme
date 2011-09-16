@@ -16,7 +16,7 @@
   <div id="footer-wrap">
 
     <?php get_search_form() ?>
-    <?php wp_nav_menu() ?>
+    <?php wp_nav_menu( array('menu' => 'footer')) ?>
     <div id="copyright">
       <a href="http://www.facebook.com/pages/Environmental-Window-Solutions-LLC/112461382191249"><img src="/img/fb.png" /></a>
       &copy; <?php print(date('Y')) ?> Environmental Window Solutions<br />
