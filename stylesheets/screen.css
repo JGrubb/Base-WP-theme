@@ -1043,11 +1043,14 @@ div.wpcf7 input[type="submit"] {
   background: linear-gradient(50%, #5e88a2, #2f4451);
   text-shadow: none;
   font-size: 16px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   font-weight: normal;
   color: white;
   text-transform: uppercase;
 }
-/* line 314, ../sass/screen.sass */
+/* line 315, ../sass/screen.sass */
 div.wpcf7 input[type="submit"]:hover {
   background: #385262;
   background: -webkit-gradient(linear, left 50%, left bottom, from(#4b6d82), to(#1c2931));
