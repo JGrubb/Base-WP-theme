@@ -227,7 +227,7 @@ input[type="week"] {
   -webkit-appearance: none;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0;
+  border-radius: 2px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -237,10 +237,10 @@ input[type="week"] {
   background-color: white;
   border: 1px solid;
   border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
+  color: #444444;
   outline: 0;
   padding: 2px 3px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
   height: 1.8em;
   *padding-top: 2px;
@@ -1009,4 +1009,19 @@ body {
 /* line 290, ../sass/screen.sass */
 #searchform input[type="submit"]:hover {
   cursor: pointer;
+}
+
+/* line 293, ../sass/screen.sass */
+div.wpcf7 {
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left 50%, left bottom, from(#eeeeee), to(#bbbbbb));
+  background: -webkit-linear-gradient(50% 270deg, #eeeeee, #bbbbbb);
+  background: -moz-linear-gradient(50% 270deg, #eeeeee, #bbbbbb);
+  background: -o-linear-gradient(50% 270deg, #eeeeee, #bbbbbb);
+  background: -ms-linear-gradient(50% 270deg, #eeeeee, #bbbbbb);
+  background: linear-gradient(50%, #eeeeee, #bbbbbb);
+  padding: 15px !important;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
