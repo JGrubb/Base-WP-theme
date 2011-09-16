@@ -545,10 +545,10 @@ body {
 /* line 61, ../sass/screen.sass */
 #header #flaggy-thing {
   position: absolute;
-  height: 150px;
-  width: 90px;
+  height: 140px;
+  width: 261px;
   top: 0;
-  left: -90px;
+  left: -261px;
   background: url(../images/flag.png) center no-repeat;
 }
 /* line 68, ../sass/screen.sass */
@@ -1031,4 +1031,29 @@ div.wpcf7 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+}
+/* line 306, ../sass/screen.sass */
+div.wpcf7 input[type="submit"] {
+  background: #5e88a2;
+  background: -webkit-gradient(linear, left 50%, left bottom, from(#5e88a2), to(#2f4451));
+  background: -webkit-linear-gradient(50% 270deg, #5e88a2, #2f4451);
+  background: -moz-linear-gradient(50% 270deg, #5e88a2, #2f4451);
+  background: -o-linear-gradient(50% 270deg, #5e88a2, #2f4451);
+  background: -ms-linear-gradient(50% 270deg, #5e88a2, #2f4451);
+  background: linear-gradient(50%, #5e88a2, #2f4451);
+  text-shadow: none;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 314, ../sass/screen.sass */
+div.wpcf7 input[type="submit"]:hover {
+  background: #385262;
+  background: -webkit-gradient(linear, left 50%, left bottom, from(#4b6d82), to(#1c2931));
+  background: -webkit-linear-gradient(50% 270deg, #4b6d82, #1c2931);
+  background: -moz-linear-gradient(50% 270deg, #4b6d82, #1c2931);
+  background: -o-linear-gradient(50% 270deg, #4b6d82, #1c2931);
+  background: -ms-linear-gradient(50% 270deg, #4b6d82, #1c2931);
+  background: linear-gradient(50%, #4b6d82, #1c2931);
 }
