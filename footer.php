@@ -33,5 +33,10 @@
 ?>
   </div>
 </div>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.ngg-slideshow').wrap('<div class="grid-8"');
+});
+</script>
 </body>
 </html>
