@@ -43,6 +43,12 @@ h5
 p
   margin: 1.5em 0
   
+a
+  color: $grey-blue
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  
 body
   font-family: arial
   color: #444
@@ -131,6 +137,8 @@ body
 #home-stage
   background: #004964 url(../images/home-slice.png) center bottom repeat-x
   margin-bottom: 30px
+  a
+    color: #fff
 .home-wrap
   @include container
   .grid-8
