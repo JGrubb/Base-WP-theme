@@ -18,6 +18,7 @@
     <?php get_search_form() ?>
     <?php wp_nav_menu() ?>
     <div id="copyright">
+      <a href="http://www.facebook.com/pages/Environmental-Window-Solutions-LLC/112461382191249"><img src="/img/fb.png" /></a>
       &copy; <?php print(date('Y')) ?> Environmental Window Solutions<br />
       (704)200-2001<br />
       <a href="mailto:matt@environmentalwindow.com">Email Us</a>

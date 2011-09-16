@@ -556,6 +556,11 @@ body {
   line-height: 16px;
 }
 /* line 243, ../sass/screen.sass */
+#footer #footer-wrap #copyright img {
+  float: right;
+  margin-left: 5px;
+}
+/* line 246, ../sass/screen.sass */
 #footer #footer-wrap #copyright a {
   color: #9fb8c7;
   text-decoration: none;
@@ -563,7 +568,7 @@ body {
   font-weight: bold;
 }
 
-/* line 249, ../sass/screen.sass */
+/* line 252, ../sass/screen.sass */
 #searchform {
   background: white;
   margin-top: 5px;
@@ -581,7 +586,7 @@ body {
   background: -ms-linear-gradient(top 270deg, white, #cccccc);
   background: linear-gradient(top, #ffffff, #cccccc);
 }
-/* line 256, ../sass/screen.sass */
+/* line 259, ../sass/screen.sass */
 #searchform input[type="text"] {
   font-size: 16px;
   margin: 0;
@@ -592,7 +597,7 @@ body {
   font-style: italic;
   width: 179px;
 }
-/* line 265, ../sass/screen.sass */
+/* line 268, ../sass/screen.sass */
 #searchform input[type="submit"] {
   border: none;
   width: 25px;
@@ -600,7 +605,7 @@ body {
   position: relative;
   background: url(../images/search-button.png) center no-repeat;
 }
-/* line 271, ../sass/screen.sass */
+/* line 274, ../sass/screen.sass */
 #searchform input[type="submit"]:hover {
   cursor: pointer;
 }
