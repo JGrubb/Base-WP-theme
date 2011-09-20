@@ -826,7 +826,7 @@ body {
 .home-wrap .home-grid .yd_rp_widget a {
   color: #5e88a2;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 /* line 206, ../sass/screen.sass */
 .home-wrap .home-grid .yd_rp_widget li {
